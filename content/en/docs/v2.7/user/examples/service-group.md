@@ -22,15 +22,4 @@ When you have multi-impls of a interface,you can distinguish them with the group
 <dubbo:reference id="memberIndexService" group="member" interface="com.xxx.IndewxService" />
 ```
 
-Any group:
-
-```xml
-<dubbo:reference id="barService" interface="com.foo.BarService" group="*" />
-```
-
-{{% alert title="Warning" color="warning" %}}
-`group="*"` is supported after version `2.2.0`, always select only one available group of implementations to invoke.
-{{% /alert %}}
-
-
 
